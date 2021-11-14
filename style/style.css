@@ -1,0 +1,201 @@
+:root {
+  --primary-color: rgb(242, 132, 179);
+  --backgrounf-color: rgb(255, 253, 240);
+  --about-me-color: black;
+  --home-svg-opacity: 0;
+  --svg-color-primary: black;
+  --show-menu: 0;
+  --y-transform-transition: translateY(10px);
+  --title-h1-size: 55px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--backgrounf-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  overflow: hidden;
+}
+
+/* Header */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  opacity: var(--show-menu);
+  display: inline;
+  margin: 0px;
+  font-size: 20px;
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+header li a:hover,
+header li a:focus {
+  color: var(--primary-color);
+}
+
+header li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: translate3d(-100%, 0, 0);
+}
+
+a:hover::after,
+a:focus::after {
+  background-color: var(--primary-color);
+  opacity: .9;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Home */
+
+.home-container {
+  position: relative;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+.yanis,
+.developer,
+.algeria {
+  fill: var(--svg-color-primary);
+}
+
+.about-me {
+  fill: var(--about-me-color);
+}
+
+.about-me-underline {
+  stroke: var(--about-me-color);
+}
+
+.smooth-transition,
+svg path,
+header li a {
+  transition: all 0.3s ease-in-out;
+}
+
+.home-container svg path {
+  opacity: var(--home-svg-opacity);
+}
+
+.transformation-y {
+  transform: var(--y-transform-transition);
+}
+
+.beside-svg-top {
+  opacity: var(--show-menu);
+  font-family: "Questrial", sans-serif;
+  position: absolute;
+  width: 220px;
+  margin-right: 70px;
+  margin-top: 70px;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+}
+
+.beside-svg-bot {
+  opacity: var(--show-menu);
+  font-family: "Questrial", sans-serif;
+  position: absolute;
+  width: 300px;
+  margin-left: 70px;
+  top: 45%;
+  left: 0;
+  font-size: 18px;
+}
+
+/* Projects */
+
+.projects-container {
+  margin: 200px 100px;
+  font-family: "Questrial", sans-serif;
+  font-size: 2.7vw;
+}
+
+.card {
+  margin: 40px;
+  position: relative;
+  max-width: 40vw;
+  max-height: 60vh;
+  box-shadow: 0 40px 60px -6px black;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  background-color: var(--backgrounf-color);
+  transition: all 0.8s ease;
+}
+
+.card:hover .card-desc {
+  border-radius: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  height: 100%;
+  background-color: rgba(255, 253, 240, 0.79);
+}
+.card-desc button {
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 3px solid gray;
+  background-color: transparent;
+  font-family: "Questrial", sans-serif;
+  word-wrap: normal;
+  font-size: 30px;
+  padding: 1.3vw 4vh;
+}
+
+.card-desc button:hover {
+  background-color: rgba(242, 132, 180, 0.79);
+}
