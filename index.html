@@ -11,11 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Yanis - Portfolio</title>
   </head>
   <body>
     <header>
       <div
+        id="header"
         style="
           width: auto;
           padding-top: 10px;
@@ -25,7 +30,7 @@
         "
       >
         <ul class="smooth-transition transformation-y">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#header">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#about">About</a></li>
@@ -397,14 +402,200 @@
         </div>
       </div>
 
-      <div class="projects-container">
+      <div id="projects" class="projects-container">
         <h1>PROJECTS</h1>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1563136073-32c6255d1e84?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFkZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-          <div class="card-desc">
-            <button>Voir la vidéo<span style="font-size: 24px;">&#9658;</span></button>
+        <div class="cards">
+          <div class="card1">
+            <div class="card">
+              <img src="images/msy-badgeuse/mockup-msy.jpeg" alt="" />
+              <div class="card-action">
+                <button>
+                  Show more<span style="font-size: 24px; margin-left: 16px"
+                    >&#9658;</span
+                  >
+                </button>
+              </div>
+            </div>
+            <h2>Badger with RFID contact</h2>
+            <div class="card-desc">
+              A software for managing the clockings of employees of a transport
+              company, with the use of ElectronJS and an Arduino board
+            </div>
+          </div>
+
+          <div class="card2">
+            <div class="card">
+              <img src="images/cti-expert/mockup-cti.png" alt="" />
+              <div class="card-action">
+                <button>
+                  Show more<span style="font-size: 24px; margin-left: 16px"
+                    >&#9658;</span
+                  >
+                </button>
+              </div>
+            </div>
+            <h2>Landing page for CTI Expert</h2>
+            <div class="card-desc">
+              A simple landing page created using <strong>VueJs</strong> and
+              <strong>VuetifyJS</strong>, for the technical control company
+              <strong>CTI Expert</strong>
+            </div>
+          </div>
+
+          <div class="card1">
+            <div class="card">
+              <img
+                src="images/metrotec-algerie/mockup-metrotec-algerie.png"
+                alt=""
+              />
+              <div class="card-action">
+                <button>
+                  Show more<span style="font-size: 24px; margin-left: 16px"
+                    >&#9658;</span
+                  >
+                </button>
+              </div>
+            </div>
+            <h2>Landing page for Metrotec Algérie</h2>
+            <div class="card-desc">
+              A simple landing page created using VueJs and VuetifyJS, for the
+              metrology company Metrotec Algérie.
+            </div>
+          </div>
+
+          <div class="card2">
+            <div class="card">
+              <img src="images/v2quiz/v2quiz-1.gif" alt="" />
+              <div class="card-action">
+                <button>
+                  Show more<span style="font-size: 24px; margin-left: 16px"
+                    >&#9658;</span
+                  >
+                </button>
+              </div>
+            </div>
+            <h2>A small quiz site - VQuiz</h2>
+            <div class="card-desc">
+              A quiz game created using VueJs and VuetifyJS, to familiarize
+              myself with vuejs freamwork.
+            </div>
           </div>
         </div>
+      </div>
+
+      <!-- About -->
+
+      <div id="about" class="about-container">
+        <h1>ABOUT</h1>
+        <div class="about-desc">
+          <p>
+            I am 23 years old, and I love programming and design at an early
+            age, so I've dedicated my life to it
+            <br />
+            <br />
+            I graduated from the Abderrahmane Mira university of Bejaia with
+            bachelor's degree in computer science. I worked as graphic designer,
+            web developer, head assistant of a mini-market. In 2018 I improved
+            my graphic designer skills at the XXXX School.
+          </p>
+        </div>
+        <div class="image-about">
+          <img style="width: 25vw" src="images/me/me1.jpeg" alt="me" />
+          <div>
+            <span>
+              I TRY TO IMPROVE MYSELF EVERY DAY ON THE TECHNOLOGIES I USE, AND I
+              KEEP AN EYE ON THE LATEST UI/UX TRENDS
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- What about my skills -->
+      <div class="about-skills">
+        <h1>WHAT ABOUT MY SKILLS</h1>
+        <div>
+          <div class="true-skills">
+            <div class="true-skills-desc">
+              <p>
+                It's a trend. It looks pretty. But it has no meaningful purpose.
+                <br />
+                <br />
+                For instance, i have 4 of 5 units filled for Photoshop.
+                <br />
+                4 of 5 whats? Skill units? Years? Im I 4/5ths of the way to
+                beating the boss at the end of Photoshop? No! It makes no sense.
+              </p>
+            </div>
+            <div class="true-to-fake">
+              <button class="smooth-transition">
+                <div></div>
+              </button>
+            </div>
+          </div>
+
+          <div
+            style="
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+            class="fake-skills"
+          >
+            <div>
+              <p>Figma</p>
+              <div class="skill-box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="box-skills-empty"></div>
+                <div class="box-skills-empty"></div>
+              </div>
+            </div>
+
+            <div>
+              <p>Photoshop & Illustrator</p>
+              <div class="skill-box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="box-skills-empty"></div>
+              </div>
+            </div>
+
+            <div>
+              <p>Android Studio</p>
+              <div class="skill-box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="box-skills-empty"></div>
+              </div>
+            </div>
+
+            <div>
+              <p>Illustrator</p>
+              <div class="skill-box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="box-skills-empty"></div>
+                <div class="box-skills-empty"></div>
+              </div>
+            </div>
+
+            <div class="fake-skills-interrogation">
+              <button>How ?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="software-skills">
+        <h1>SOFTWARE SKILLS</h1>
       </div>
     </main>
 
