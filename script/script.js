@@ -45,22 +45,31 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-var howSkillsBar = document.querySelector('.fake-skills-interrogation button')
-var fakeSkills = document.querySelector('.fake-skills')
-var undoFakeSkills = document.querySelector('.true-to-fake button')
+var howSkillsBar = document.querySelector(".fake-skills-interrogation button");
+var fakeSkills = document.querySelector(".fake-skills");
+var undoFakeSkills = document.querySelector(".true-to-fake button");
 
 howSkillsBar.onclick = () => {
-  fakeSkills.style.width = '0'
-  fakeSkills.style.borderRaduis = '100%'
-}
+  fakeSkills.style.width = "0";
+  fakeSkills.style.borderRaduis = "100%";
+};
 
 undoFakeSkills.onclick = () => {
-  fakeSkills.style.width = '100%'
-  fakeSkills.style.borderRaduis = '0'
-}
+  fakeSkills.style.width = "100%";
+  fakeSkills.style.borderRaduis = "0";
+};
 
 var btnGoToTop = document.querySelector(".go-top button");
 
 btnGoToTop.onclick = () => {
-  location.href='#header'
+  location.href = "#header";
+};
+
+aboutMeClicable.onclick = () => {
+
+  alert(document.querySelector('#test').offsetTop)
+}
+
+function goToAbout() {
+  alert(aboutMeClicable)
 }
