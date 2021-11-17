@@ -39,8 +39,6 @@ h3 {
   font-size: 1.7vw;
 }
 
-/* Header */
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -51,7 +49,9 @@ ul {
   justify-content: center;
 }
 
-li {
+/* Header */
+
+header li {
   opacity: var(--show-menu);
   display: inline;
   margin: 0px;
@@ -148,7 +148,8 @@ header li a {
 
 .projects-container,
 .about-container,
-.software-skills {
+.technical-skills,
+.footer-container {
   margin: 200px 100px 0px 100px;
   font-family: "Questrial", sans-serif;
 }
@@ -376,10 +377,9 @@ header li a {
 }
 
 .true-skills {
-  background-color: var(--backgrounf-color);
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -388,7 +388,12 @@ header li a {
   font-family: "Questrial", sans-serif;
 }
 
-.true-to-fake button div {
+.true-skills .no-sense {
+  color: var(--primary-color);
+  font-size: 26px;
+}
+
+.true-to-fake button div, .go-top button div {
   background-image: url(../images/svg/undo-alt-solid.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -396,19 +401,112 @@ header li a {
   margin: 30px;
 }
 
-.true-to-fake button {
+.true-to-fake button, .go-top button {
   border-radius: 50%;
   border: 3px solid black;
   cursor: pointer;
   background-color: transparent;
 }
 
-.true-to-fake button:hover {
+.true-to-fake button:hover, .go-top button:hover {
   border: 3px solid var(--primary-color-transparent);
   background-color: var(--primary-color-transparent);
 }
 
 .true-to-fake button:hover div {
   background-image: url(../images/svg/undo-alt-solid-hover.svg);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Technical Skills */
+
+.technical-skills > div {
+  margin-top: 70px;
+}
+
+.technical-skills ul {
+  justify-content: flex-start;
+}
+
+.technical-skills li {
+  display: inline;
+  margin: 0px;
+  font-size: 20px;
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.technical-skills li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.technical-skills li div img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+.footer-container {
+  position: relative;
+}
+
+.footer-container h1 {
+  text-align: left;
+}
+
+.contact-interested a {
+  color: gray;
+  text-decoration: underline;
+}
+
+.email-phone {
+  margin-top: 70px;
+}
+
+.email-phone h3 a {
+  font-family: "Croissant One", cursive;
+  display: inline;
+}
+
+.email-phone h3 a:hover,
+.menu-footer li a:hover,
+.contact-interested a:hover {
+  color: var(--primary-color);
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: left;
+}
+
+.menu-footer li {
+  margin: 40px 30px 20px 0px;
+  font-size: 30px;
+}
+
+.go-top {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.go-top button div {
+  background-image: url(../images/svg/arrow-up-solid.svg);
+  padding: 30px;
+  margin: 15px; 
+}
+
+.go-top button:hover div {
+  background-image: url(../images/svg/arrow-up-solid-hover.svg);  
+}
+
+.go-top button:hover{
+  border: 3px solid var(--primary-color-transparent);
+  background-color: var(--primary-color-transparent);
 }

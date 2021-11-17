@@ -58,3 +58,9 @@ undoFakeSkills.onclick = () => {
   fakeSkills.style.width = '100%'
   fakeSkills.style.borderRaduis = '0'
 }
+
+var btnGoToTop = document.querySelector(".go-top button");
+
+btnGoToTop.onclick = () => {
+  location.href='#header'
+}
