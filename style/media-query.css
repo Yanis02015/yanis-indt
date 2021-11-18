@@ -1,0 +1,191 @@
+@media only screen and (max-width: 1000px) {
+  .about-desc p,
+  .true-skills p {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .fake-skills-interrogation button {
+    padding: 0px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cards > div {
+    padding: 0;
+    align-self: center;
+  }
+  .card {
+    position: relative;
+    max-width: 100%;
+    box-shadow: 0 40px 60px -6px black;
+    overflow: hidden;
+  }
+  .projects-container h2 {
+    font-size: 30px;
+  }
+  .card-desc {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .image-about {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+  }
+  .image-about > div {
+    position: relative;
+  }
+  .image-about img {
+    width: 40vw;
+  }
+  .image-about .about-image-desc {
+    font-size: 17px;
+    width: 40vw;
+    left: -23vw;
+  }
+  .about-desc {
+    width: auto;
+  }
+
+  .fake-skills > div {
+    font-size: 17px;
+    grid-template-columns: 140px auto;
+  }
+
+  .skill-box > div {
+    width: 28px;
+    margin: auto 15px;
+  }
+
+  .true-skills {
+    display: block;
+  }
+
+  .true-skills button div {
+    padding: 19px;
+    margin: 15px;
+  }
+  .true-skills button {
+    padding: 0;
+  }
+  .true-skills .true-to-fake {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .true-skills .true-skills-desc {
+    position: relative;
+    width: 100%;
+  }
+  .true-skills .true-skills-desc p {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projects-container,
+  .about-container,
+  .technical-skills,
+  .footer-container {
+    margin: 100px 40px 0px 40px;
+  }
+  .about-skills {
+    margin: 20vw 40px 0px 40px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .menu-footer li {
+    font-size: 24px;
+  }
+
+  .beside-svg-top,
+  .beside-svg-bot {
+    position: relative;
+    margin: 40px 0px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .skill-box > div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: auto 10px;
+  }
+
+  .technical-skills ul {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .technical-skills li div {
+    flex-direction: row;
+  }
+  .technical-skills li div img {
+    margin-right: 16px;
+    margin-bottom: 0;
+    width: 25px;
+  }
+  .menu-footer li {
+    font-size: 18px;
+  }
+  .go-top button div {
+    padding: 15px;
+    margin: 7.5px;
+  }
+  .go-top button {
+    padding: 0;
+  }
+  .go-top {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .email-phone {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .menu-footer li {
+    font-size: 13px;
+  }
+  .fake-skills > div {
+    grid-template-columns: auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  h3 {
+    font-size: 20px;
+  }
+  .projects-container,
+  .about-container,
+  .technical-skills,
+  .footer-container,
+  .home-container {
+    margin: 70px 20px 0px 20px;
+  }
+  .about-skills {
+    margin: 20vw 20px 0px 20px;
+  }
+  .image-about .about-image-desc {
+    font-size: 14px;
+    width: 50vw;
+    left: -30vw;
+  }
+}

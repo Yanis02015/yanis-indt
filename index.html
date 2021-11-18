@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/media-query.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -398,7 +399,7 @@
         </div>
       </div>
 
-      <div style="padding-top: 5px;" id="projects" class="projects-container">
+      <div style="padding-top: 5px" id="projects" class="projects-container">
         <h1>PROJECTS</h1>
         <div class="cards">
           <div class="card1">
@@ -496,12 +497,14 @@
           </p>
         </div>
         <div class="image-about">
-          <img style="width: 25vw" src="images/me/me1.jpeg" alt="me" />
-          <div id="about" style="padding-top: 10px;">
-            <span>
-              I TRY TO IMPROVE MYSELF EVERY DAY ON THE TECHNOLOGIES I USE, AND I
-              KEEP AN EYE ON THE LATEST UI/UX TRENDS
-            </span>
+          <div>
+            <img src="images/me/me1.jpeg" alt="me" />
+            <div id="about" class="about-image-desc" style="padding-top: 10px">
+              <span>
+                I TRY TO IMPROVE MYSELF EVERY DAY ON THE TECHNOLOGIES I USE, AND
+                I KEEP AN EYE ON THE LATEST UI/UX TRENDS
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -588,7 +591,7 @@
             </div>
 
             <div class="fake-skills-interrogation">
-              <button>How ?</button>
+              <button><span>How ?</span></button>
             </div>
           </div>
         </div>
@@ -783,6 +786,12 @@
           <a class="smooth-transition" href=""> Get started! </a>
         </div>
 
+        <div class="go-top">
+          <button class="smooth-transition">
+            <div></div>
+          </button>
+        </div>
+
         <div class="email-phone">
           <h3>
             <a class="smooth-transition" href="/">yanis.indt@gmail.com</a>
@@ -803,12 +812,6 @@
               <a class="smooth-transition" href="">GITHUB</a>
             </li>
           </ul>
-        </div>
-
-        <div class="go-top">
-          <button class="smooth-transition">
-            <div></div>
-          </button>
         </div>
       </div>
     </footer>
