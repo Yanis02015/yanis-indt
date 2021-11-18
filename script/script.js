@@ -73,3 +73,6 @@ aboutMeClicable.onclick = () => {
 function goToAbout() {
   alert(aboutMeClicable)
 }
+
+var currentYear = document.querySelector('#currentYear')
+currentYear.innerHTML = new Date().getFullYear()
