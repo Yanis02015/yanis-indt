@@ -37,7 +37,7 @@
   .image-about {
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 50px;
   }
   .image-about > div {
