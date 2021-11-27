@@ -88,6 +88,9 @@
   .true-skills .true-skills-desc p {
     margin: 0;
   }
+  #about-div {
+    padding-top: 5px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -154,7 +157,7 @@
   .go-top {
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
@@ -210,6 +213,15 @@
     margin-top: 0px;
     margin-bottom: 15px;
   }
+  .image-logo-footer img{
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .image-logo-footer{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 270px) {
@@ -222,5 +234,35 @@
   footer .email-phone h3 {
     font-size: 17px;
     word-wrap: break-word;
+  }
+}
+
+@media only screen and (max-width: 233px) {
+  footer .email-phone h3 {
+    font-size: 13px;
+  }
+}
+
+/* media-query-target-browsers */
+
+@-moz-document url-prefix() {
+  .fake-skills .fake-skills-interrogation {
+    background: rgb(242, 132, 179);
+    background: radial-gradient(
+      circle,
+      rgba(242, 132, 179, 0.6) 0%,
+      rgba(255, 253, 240, 0.9) 100%
+    );
+  }
+}
+
+@media screen and (min-width: 0\0) and (min-resolution: 72dpi) {
+  .fake-skills .fake-skills-interrogation {
+    background: rgb(242, 132, 179);
+    background: radial-gradient(
+      circle,
+      rgba(242, 132, 179, 0.6) 0%,
+      rgba(255, 253, 240, 0.9) 100%
+    );
   }
 }

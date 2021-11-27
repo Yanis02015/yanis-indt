@@ -113,6 +113,10 @@ header li a {
   transition: all 0.3s ease-in-out;
 }
 
+.home-container svg a, #li-about {
+  cursor: pointer;
+}
+
 .home-container svg path {
   opacity: var(--home-svg-opacity);
 }
@@ -369,6 +373,7 @@ header li a {
 }
 
 .fake-skills:hover .fake-skills-interrogation {
+  -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   border-radius: 0;
   width: 100%;
@@ -511,6 +516,18 @@ header li a {
 .go-top button:hover{
   border: 3px solid var(--primary-color-transparent);
   background-color: var(--primary-color-transparent);
+}
+
+.email-phone {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-logo-footer img{
+  padding: 10px;
+  height: 70px;
 }
 
 .copyright p {

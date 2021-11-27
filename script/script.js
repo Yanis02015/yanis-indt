@@ -65,14 +65,70 @@ btnGoToTop.onclick = () => {
   location.href = "#header";
 };
 
-aboutMeClicable.onclick = () => {
-
-  alert(document.querySelector('#test').offsetTop)
-}
-
 function goToAbout() {
-  alert(aboutMeClicable)
+  alert(aboutMeClicable);
 }
 
-var currentYear = document.querySelector('#currentYear')
-currentYear.innerHTML = new Date().getFullYear()
+var currentYear = document.querySelector("#currentYear");
+currentYear.innerHTML = new Date().getFullYear();
+
+window.addEventListener(
+  "resize",
+  () => {
+    getAboutId();
+  },
+  true
+);
+
+var aboutId = "#about";
+var headerAbout = document.querySelector("#li-about");
+
+function getAboutId() {
+  var w =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  w >= 800 ? (aboutId = "#about") : (aboutId = "#about-div");
+}
+
+getAboutId();
+
+aboutMeClicable.onclick = () => {
+  location.href = aboutId;
+};
+
+headerAbout.onclick = () => {
+  location.href = aboutId;
+};
+
+var btnBadger = document.querySelector('#badger')
+btnBadger.onclick = () => {
+  location.href = '/badger.html'
+}
+
+var btnM4O = document.querySelector('#m4o')
+btnM4O.onclick = () => {
+  location.href = '/m4o.html'
+}
+
+var btn0sur20 = document.querySelector('#_0sur20')
+btn0sur20.onclick = () => {
+  console.log('test');
+  location.href = '/0sur20.html'
+}
+
+var btnCti = document.querySelector('#ctiExpert')
+btnCti.onclick = () => {
+  location.href = '/cti-expert.html'
+}
+
+var btnMetrotec = document.querySelector('#metrotecAlgerie')
+btnMetrotec.onclick = () => {
+  location.href = '/metrotec-algerie.html'
+}
+
+var btnV2quiz = document.querySelector('#v2quiz')
+btnV2quiz.onclick = () => {
+  location.href = '/v2quiz.html'
+}

@@ -1,0 +1,96 @@
+* {
+  font-family: "Questrial", sans-serif;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.container {
+  margin: 35vh 0px 0px 200px;
+}
+
+.subtitle {
+  color: gray;
+  font-size: 20px;
+}
+
+.project-desc p {
+  font-size: 24px;
+  line-height: 190%;
+  margin-bottom: 40px;
+}
+
+blockquote {
+  line-height: 170%;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #666666;
+  margin: 6vmin 0;
+  padding: 10px 20px 10px 30px;
+  border-left: 4px solid #dddddd;
+}
+
+.technologies-used ul {
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.technologies-used li > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.technologies-used li > div img {
+  width: 50px;
+  margin: 30px;
+}
+
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 45px;
+  font-size: 25px;
+  margin: 30px;
+}
+
+.back::before {
+  content: "";
+  width: 27px;
+  height: 100%;
+  background-image: url("../images/svg/arrow-left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.visit-it a {
+  display: inline;
+  color: var(--primary-color);
+  transition: all .4s ease-in-out;
+}
+
+.visit-it a:hover {
+  padding-left: 10px;
+}
+
+.screen-phone {
+  display: flex;
+  justify-content: center;
+}
+
+.screen-phone img {
+  width: auto;
+}

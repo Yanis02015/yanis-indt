@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/me/yanis-logo.png" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/media-query.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +30,7 @@
           <li id="li-home"><a href="#header">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
+          <li id="li-about"><a>About</a></li>
         </ul>
       </div>
     </header>
@@ -375,7 +376,7 @@
               stroke-width="2"
               stroke-linecap="round"
             />
-            <a xlink:href="#about">
+            <a>
               <rect
                 class="about-me about-me-clicable"
                 x="1008"
@@ -405,10 +406,10 @@
             <div class="card">
               <img src="images/msy-badgeuse/mockup-msy.jpeg" alt="" />
               <div class="card-action">
-                <button>
-                  Show more<span style="font-size: 24px; margin-left: 16px"
-                    >&#9658;</span
-                  >
+                <button id="badger">
+                  Show more<span style="font-size: 24px; margin-left: 16px">
+                    &#9658;
+                  </span>
                 </button>
               </div>
             </div>
@@ -421,9 +422,45 @@
 
           <div class="card2">
             <div class="card">
+              <img src="images/m4o/m4o-mockup.png" alt="" />
+              <div class="card-action">
+                <button id="m4o">
+                  Show more<span style="font-size: 24px; margin-left: 16px">
+                    &#9658;
+                  </span>
+                </button>
+              </div>
+            </div>
+            <h2>M4O Traffic Manager</h2>
+            <div class="card-desc">
+              An Android application for driving assistance via the transmission
+              of the video stream in intersections.
+            </div>
+          </div>
+
+          <div class="card1">
+            <div class="card">
+              <img src="images/0sur20/0sur20-mockup.png" alt="" />
+              <div class="card-action">
+                <button id="_0sur20">
+                  Show more<span style="font-size: 24px; margin-left: 16px">
+                    &#9658;
+                  </span>
+                </button>
+              </div>
+            </div>
+            <h2>0sur20 - School Average Calculator</h2>
+            <div class="card-desc">
+              One of my first websites, a college average calculator for exact
+              sciences faculty.
+            </div>
+          </div>
+
+          <div class="card2">
+            <div class="card">
               <img src="images/cti-expert/mockup-cti.png" alt="" />
               <div class="card-action">
-                <button>
+                <button id="ctiExpert">
                   Show more<span style="font-size: 24px; margin-left: 16px"
                     >&#9658;</span
                   >
@@ -445,7 +482,7 @@
                 alt=""
               />
               <div class="card-action">
-                <button>
+                <button id="metrotecAlgerie">
                   Show more<span style="font-size: 24px; margin-left: 16px"
                     >&#9658;</span
                   >
@@ -463,7 +500,7 @@
             <div class="card">
               <img src="images/v2quiz/v2quiz-1.gif" alt="" />
               <div class="card-action">
-                <button>
+                <button id="v2quiz">
                   Show more<span style="font-size: 24px; margin-left: 16px"
                     >&#9658;</span
                   >
@@ -735,14 +772,20 @@
             </li>
             <li>
               <div>
+                <img src="images/svg/intellijidea.png" alt="" />
+                IntelliJ IDEA
+              </div>
+            </li>
+            <li>
+              <div>
                 <img src="images/svg/office.png" alt="" />
                 Microsoft Office
               </div>
             </li>
             <li>
               <div>
-                <img src="images/svg/intellijidea.png" alt="" />
-                Eclipse / Netbeans
+                <img src="images/svg/eclipse.png" alt="" />
+                Eclipse
               </div>
             </li>
           </ul>
@@ -769,6 +812,13 @@
                 MacOS Big Sur
               </div>
             </li>
+
+            <li>
+              <div>
+                <img src="images/svg/gnubash.png" alt="" />
+                Bash Shell
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -782,7 +832,13 @@
           <h3 style="margin-bottom: 10px">
             INTERESTED IN WORKING <br />TOGETHER ?
           </h3>
-          <a class="smooth-transition" href=""> Get started! </a>
+          <a
+            style="display: inline"
+            class="smooth-transition"
+            href="mailto:yanis.indt@gmail.com"
+          >
+            Get started!
+          </a>
         </div>
 
         <div class="go-top">
@@ -792,29 +848,54 @@
         </div>
 
         <div class="email-phone">
+          <div class="image-logo-footer">
+            <img src="/images/me/yanis-logo.png" alt="my logo" />
+          </div>
           <h3>
-            <a class="smooth-transition" href="/">yanis.indt@gmail.com</a>
+            <a class="smooth-transition" href="mailto:yanis.indt@gmail.com">
+              yanis.indt@gmail.com
+            </a>
             <br />
-            <a class="smooth-transition" href="/">+213 (0) 541 49 43 61</a>
+            <a class="smooth-transition" href="tel:+213541494361">
+              +213 (0) 541 49 43 61
+            </a>
           </h3>
         </div>
 
         <div class="menu-footer">
           <ul>
             <li>
-              <a class="smooth-transition" href="">INSTAGRAM</a>
+              <a
+                class="smooth-transition"
+                href="https://www.instagram.com/yanis.indt/"
+                target="_blank"
+                >INSTAGRAM</a
+              >
             </li>
             <li>
-              <a class="smooth-transition" href="">TELEGRAM</a>
+              <a
+                class="smooth-transition"
+                href="https://twitter.com/yanisoulhaci"
+                target="_blank"
+                >TWITTER</a
+              >
             </li>
             <li>
-              <a class="smooth-transition" href="">GITHUB</a>
+              <a
+                class="smooth-transition"
+                href="https://github.com/Yanis02015"
+                target="_blank"
+                >GITHUB</a
+              >
             </li>
           </ul>
         </div>
 
         <div class="copyright">
-          <p>Copyright &copy; <span id="currentYear"></span>, Yanis Oulhaci. All Rights Reserved.</p>
+          <p>
+            Copyright &copy; <span id="currentYear"></span>,
+            <strong>Yanis Oulhaci</strong>. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
