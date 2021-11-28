@@ -14,15 +14,33 @@ h2 {
   margin: 35vh 0px 0px 200px;
 }
 
+.first-image {
+  margin-top: 30vmin;
+}
+
 .subtitle {
   color: gray;
   font-size: 20px;
+}
+
+.project-desc {
+  margin-top: 30vh;
+  margin-left: 18vh;
+}
+
+.project-desc > div {
+  width: 60%;
 }
 
 .project-desc p {
   font-size: 24px;
   line-height: 190%;
   margin-bottom: 40px;
+}
+
+.project-desc .second-text {
+  color: rgb(71, 71, 71);
+  font-size: 20px;
 }
 
 blockquote {
@@ -34,6 +52,14 @@ blockquote {
   margin: 6vmin 0;
   padding: 10px 20px 10px 30px;
   border-left: 4px solid #dddddd;
+}
+
+.image-div {
+  margin-top: 30vmin;
+}
+
+.technologies-used {
+  margin-top: 30vmin;
 }
 
 .technologies-used ul {
@@ -79,7 +105,7 @@ blockquote {
 .visit-it a {
   display: inline;
   color: var(--primary-color);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .visit-it a:hover {
@@ -93,4 +119,71 @@ blockquote {
 
 .screen-phone img {
   width: auto;
+}
+
+@media only screen and (max-width: 950px) {
+  .project-desc {
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  .project-desc p {
+    font-size: 24px;
+    line-height: 190%;
+    margin-bottom: 40px;
+  }
+  .project-desc > div {
+    width: 90%;
+  }
+  .container {
+    margin: 35vh 0px 0px 100px;
+  }
+  .back {
+    background-color: var(--primary-color);
+    background-image: url("../images/svg/arrow-left.svg");
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .back::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    margin: 35vh 20px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h2 {
+    font-size: 30px;
+  }
+  .project-desc > div {
+    width: auto;
+  }
+  .project-desc p {
+    font-size: 20px;
+  }
+  .project-desc .second-text {
+    font-size: 17px;
+  }
+  blockquote {
+    font-size: 16px;
+  }
+  .technologies-used li > div {
+    font-size: 17px;
+  }
+  .technologies-used li > div img {
+    width: 40px;
+    margin: 30px;
+  }
+  .screen-phone img {
+    width: 100%;
+  }
+  .technologies-used {
+    margin-top: 100px;
+  }
 }

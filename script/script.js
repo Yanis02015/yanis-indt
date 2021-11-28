@@ -82,14 +82,18 @@ window.addEventListener(
 
 var aboutId = "#about";
 var headerAbout = document.querySelector("#li-about");
+var btnBack = document.querySelector(".back");
 
 function getAboutId() {
   var w =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
-
-  w >= 800 ? (aboutId = "#about") : (aboutId = "#about-div");
+  if (w >= 800) {
+    aboutId = "#about";
+  } else {
+    aboutId = "#about-div";
+  }
 }
 
 getAboutId();
@@ -102,33 +106,33 @@ headerAbout.onclick = () => {
   location.href = aboutId;
 };
 
-var btnBadger = document.querySelector('#badger')
+var btnBadger = document.querySelector("#badger");
 btnBadger.onclick = () => {
-  location.href = '/badger.html'
-}
+  location.href = "/badger.html";
+};
 
-var btnM4O = document.querySelector('#m4o')
+var btnM4O = document.querySelector("#m4o");
 btnM4O.onclick = () => {
-  location.href = '/m4o.html'
-}
+  location.href = "/m4o.html";
+};
 
-var btn0sur20 = document.querySelector('#_0sur20')
+var btn0sur20 = document.querySelector("#_0sur20");
 btn0sur20.onclick = () => {
-  console.log('test');
-  location.href = '/0sur20.html'
-}
+  console.log("test");
+  location.href = "/0sur20.html";
+};
 
-var btnCti = document.querySelector('#ctiExpert')
+var btnCti = document.querySelector("#ctiExpert");
 btnCti.onclick = () => {
-  location.href = '/cti-expert.html'
-}
+  location.href = "/cti-expert.html";
+};
 
-var btnMetrotec = document.querySelector('#metrotecAlgerie')
+var btnMetrotec = document.querySelector("#metrotecAlgerie");
 btnMetrotec.onclick = () => {
-  location.href = '/metrotec-algerie.html'
-}
+  location.href = "/metrotec-algerie.html";
+};
 
-var btnV2quiz = document.querySelector('#v2quiz')
+var btnV2quiz = document.querySelector("#v2quiz");
 btnV2quiz.onclick = () => {
-  location.href = '/v2quiz.html'
-}
+  location.href = "/v2quiz.html";
+};
