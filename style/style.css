@@ -113,7 +113,8 @@ header li a {
   transition: all 0.3s ease-in-out;
 }
 
-.home-container svg a, #li-about {
+.home-container svg a,
+#li-about {
   cursor: pointer;
 }
 
@@ -400,7 +401,7 @@ header li a {
   font-size: 26px;
 }
 
-.true-to-fake button div, .go-top button div {
+.true-to-fake button div {
   background-image: url(../images/svg/undo-alt-solid.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -408,14 +409,14 @@ header li a {
   margin: 30px;
 }
 
-.true-to-fake button, .go-top button {
+.true-to-fake button,
+.go-top {
   border-radius: 50%;
-  border: 3px solid black;
   cursor: pointer;
   background-color: transparent;
 }
 
-.true-to-fake button:hover, .go-top button:hover {
+.true-to-fake button:hover {
   border: 3px solid var(--primary-color-transparent);
   background-color: var(--primary-color-transparent);
 }
@@ -496,25 +497,40 @@ header li a {
 }
 
 .go-top {
+  transition: background-color 0.3s;
   position: absolute;
   right: 0;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  border: 3px solid black;
 }
 
-.go-top button div {
-  background-image: url(../images/svg/arrow-up-solid.svg);
-  padding: 30px;
-  margin: 15px; 
+.go-top a{
+  margin: 0;
+  padding: 0;
 }
 
-.go-top button:hover div {
-  background-image: url(../images/svg/arrow-up-solid-hover.svg);  
+.go-top svg{
+  width: 50px;
 }
 
-.go-top button:hover{
-  border: 3px solid var(--primary-color-transparent);
+.go-top:hover path{
+  fill: var(--backgrounf-color);
+}
+
+.go-top div {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.go-top:hover {
+  border-color: var(--primary-color-transparent);
   background-color: var(--primary-color-transparent);
 }
 
@@ -525,7 +541,7 @@ header li a {
   align-items: center;
 }
 
-.image-logo-footer img{
+.image-logo-footer img {
   padding: 10px;
   height: 70px;
 }

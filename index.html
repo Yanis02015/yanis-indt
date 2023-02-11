@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/Fbcq1zC/yanis-logo.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.ibb.co/Fbcq1zC/yanis-logo.png"
+    />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/media-query.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,17 +30,20 @@
           justify-content: flex-end;
         "
       >
-        <ul class="smooth-transition transformation-y">
-          <li id="li-home"><a href="#header">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li id="li-about"><a>About</a></li>
-        </ul>
+        <nav>
+          <ul class="smooth-transition transformation-y">
+            <li id="li-home"><a href="#header">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/#about-div" class="link-to-about-me">About</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <main>
-      <div class="home-container">
+      <!-- Animation -->
+      <section class="home-container">
         <div style="display: flex; justify-content: center">
           <svg
             width="1072"
@@ -376,7 +383,7 @@
               stroke-width="2"
               stroke-linecap="round"
             />
-            <a>
+            <a href="/#about-div" class="link-to-about-me">
               <rect
                 class="about-me about-me-clicable"
                 x="1008"
@@ -397,20 +404,30 @@
           I seek to create light, aesthetic and minimalistic website that solve
           user problems through effective and proven solution.
         </div>
-      </div>
+      </section>
 
-      <div style="padding-top: 5px" id="projects" class="projects-container">
+      <!-- Projects -->
+      <section
+        style="padding-top: 5px"
+        id="projects"
+        class="projects-container"
+      >
         <h1>PROJECTS</h1>
         <div class="cards">
-          <div class="card1">
+          <div class="card1" id="badger">
             <div class="card">
-              <img src="https://i.ibb.co/26Jq0nr/mockup-msy.jpg" alt="" />
+              <img
+                src="https://i.ibb.co/ZV1dHQR/mockup-msy.webp"
+                alt="Le logiciel desktop pour badgeuse pro"
+              />
               <div class="card-action">
-                <button id="badger">
-                  Show more<span style="font-size: 24px; margin-left: 16px">
-                    &#9658;
-                  </span>
-                </button>
+                <a href="/badger.html">
+                  <button>
+                    Show more<span style="font-size: 24px; margin-left: 16px">
+                      &#9658;
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
             <h2>Badger with RFID contact</h2>
@@ -420,15 +437,20 @@
             </div>
           </div>
 
-          <div class="card2">
+          <div class="card2" id="m4o">
             <div class="card">
-              <img src="https://i.ibb.co/WDVn1X6/m4o-mockup.png" alt="" />
+              <img
+                src="https://i.ibb.co/rfmCfXW/m4o-mockup.webp"
+                alt="mon projet application android faite en L3"
+              />
               <div class="card-action">
-                <button id="m4o">
-                  Show more<span style="font-size: 24px; margin-left: 16px">
-                    &#9658;
-                  </span>
-                </button>
+                <a href="/m4o.html">
+                  <button>
+                    Show more<span style="font-size: 24px; margin-left: 16px">
+                      &#9658;
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
             <h2>M4O Traffic Manager</h2>
@@ -438,15 +460,20 @@
             </div>
           </div>
 
-          <div class="card1">
+          <div class="card1" id="0sur20">
             <div class="card">
-              <img src="https://i.ibb.co/BTCjpGL/0sur20-mockup.png" alt="" />
+              <img
+                src="https://i.ibb.co/RS2Mfmh/0sur20-mockup.webp"
+                alt="mon site 0sur20 pour le calcul de moyenne scolaire"
+              />
               <div class="card-action">
-                <button id="_0sur20">
-                  Show more<span style="font-size: 24px; margin-left: 16px">
-                    &#9658;
-                  </span>
-                </button>
+                <a href="/0sur20.html">
+                  <button>
+                    Show more<span style="font-size: 24px; margin-left: 16px">
+                      &#9658;
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
             <h2>0sur20 - School Average Calculator</h2>
@@ -456,15 +483,20 @@
             </div>
           </div>
 
-          <div class="card2">
+          <div class="card2" id="ctiExpert">
             <div class="card">
-              <img src="https://i.ibb.co/vkTMbjK/mockup-cti.png" alt="" />
+              <img
+                src="https://i.ibb.co/tCBWLLm/mockup-cti.webp"
+                alt="le site de cti-expert de béjaia"
+              />
               <div class="card-action">
-                <button id="ctiExpert">
-                  Show more<span style="font-size: 24px; margin-left: 16px"
-                    >&#9658;</span
-                  >
-                </button>
+                <a href="/cti-expert.html">
+                  <button>
+                    Show more<span style="font-size: 24px; margin-left: 16px">
+                      &#9658;
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
             <h2>Landing page for CTI Expert</h2>
@@ -475,18 +507,20 @@
             </div>
           </div>
 
-          <div class="card1">
+          <div class="card1" id="metrotecAlgerie">
             <div class="card">
               <img
-                src="https://i.ibb.co/vdvqdCc/mockup-metrotec-algerie.png"
-                alt=""
+                src="https://i.ibb.co/hZ3jHmj/mockup-metrotec-algerie.webp"
+                alt="Le site metrotec algerie"
               />
               <div class="card-action">
-                <button id="metrotecAlgerie">
-                  Show more<span style="font-size: 24px; margin-left: 16px"
-                    >&#9658;</span
-                  >
-                </button>
+                <a href="/metrotec-algerie.html">
+                  <button>
+                    Show more<span style="font-size: 24px; margin-left: 16px">
+                      &#9658;
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
             <h2>Landing page for Metrotec Algérie</h2>
@@ -496,15 +530,20 @@
             </div>
           </div>
 
-          <div class="card2">
+          <div class="card2" id="v2quiz">
             <div class="card">
-              <img src="https://i.ibb.co/YT6Mjbc/v2quiz-1.gif" alt="" />
+              <img
+                src="https://i.ibb.co/jHx9qS1/v2quiz-home-screen.webp"
+                alt="Mon site de quiz"
+              />
               <div class="card-action">
-                <button id="v2quiz">
-                  Show more<span style="font-size: 24px; margin-left: 16px"
-                    >&#9658;</span
-                  >
-                </button>
+                <a href="/v2quiz.html">
+                  <button>
+                    Show more<span style="font-size: 24px; margin-left: 16px">
+                      &#9658;
+                    </span>
+                  </button>
+                </a>
               </div>
             </div>
             <h2>A small quiz site - VQuiz</h2>
@@ -514,11 +553,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- About -->
-
-      <div id="about-div" class="about-container">
+      <section id="about-div" class="about-container">
         <h1>ABOUT</h1>
         <div class="about-desc">
           <p>
@@ -543,10 +581,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- What about my skills -->
-      <div class="about-skills">
+      <!-- What about my skills - Fake skills -->
+      <section class="about-skills">
         <h1>WHAT ABOUT MY SKILLS</h1>
         <div>
           <div class="true-skills">
@@ -631,9 +669,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="technical-skills">
+      <!-- Real skills -->
+      <section class="technical-skills">
         <h1 style="margin-bottom: 70px">TECHNICAL SKILLS</h1>
         <div>
           <h3>Programming languages</h3>
@@ -760,7 +799,10 @@
             </li>
             <li>
               <div>
-                <img src="https://i.ibb.co/VtYR4nd/android-studio.webp" alt="" />
+                <img
+                  src="https://i.ibb.co/VtYR4nd/android-studio.webp"
+                  alt=""
+                />
                 Android Studio
               </div>
             </li>
@@ -821,7 +863,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -841,10 +883,26 @@
           </a>
         </div>
 
-        <div class="go-top">
-          <button class="smooth-transition">
-            <div></div>
-          </button>
+        <div class="go-top" class="smooth-transition">
+          <a href="#header">
+            <div>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="arrow-up"
+                class="svg-inline--fa fa-arrow-up fa-w-14"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="black"
+                  d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+                ></path>
+              </svg>
+            </div>
+          </a>
         </div>
 
         <div class="email-phone">

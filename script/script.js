@@ -15,7 +15,7 @@ aboutMeClicable.onmouseout = () => {
 
 var allPath = document.querySelectorAll(".home-container svg path");
 
-async function demo() {
+async function startAnimation() {
   for (let i = 0; i < allPath.length; i++) {
     allPath[i].style.opacity = 1;
     if (i === allPath.length - 1) {
@@ -29,21 +29,7 @@ async function demo() {
   }
 }
 
-demo();
-
-for (let i = 0; i < allPath.length; i++) {
-  setTimeout(() => {
-    console.log(i);
-  }, 1000);
-}
-
-function changeRootVarCss(name, value) {
-  document.documentElement.style.setProperty(name, value);
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+startAnimation();
 
 var howSkillsBar = document.querySelector(".fake-skills-interrogation button");
 var fakeSkills = document.querySelector(".fake-skills");
@@ -59,80 +45,38 @@ undoFakeSkills.onclick = () => {
   fakeSkills.style.borderRaduis = "0";
 };
 
-var btnGoToTop = document.querySelector(".go-top button");
-
-btnGoToTop.onclick = () => {
-  location.href = "#header";
-};
-
-function goToAbout() {
-  alert(aboutMeClicable);
-}
-
 var currentYear = document.querySelector("#currentYear");
 currentYear.innerHTML = new Date().getFullYear();
-
-window.addEventListener(
-  "resize",
-  () => {
-    getAboutId();
-  },
-  true
-);
-
-var aboutId = "#about";
-var headerAbout = document.querySelector("#li-about");
-var btnBack = document.querySelector(".back");
 
 function getAboutId() {
   var w =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
-  if (w >= 800) {
-    aboutId = "#about";
-  } else {
-    aboutId = "#about-div";
-  }
+  if (w >= 800) return "#about";
+  return "#about-div";
 }
 
-getAboutId();
+const linksToAbout = document.querySelectorAll("a.link-to-about-me");
+setHrefForLinkToAbout();
+function setHrefForLinkToAbout() {
+  for (let i = 0; i < linksToAbout.length; i++)
+    linksToAbout[i].setAttribute("href", `/${getAboutId()}`);
+}
 
-aboutMeClicable.onclick = () => {
-  location.href = aboutId;
-};
+window.addEventListener(
+  "resize",
+  () => {
+    setHrefForLinkToAbout();
+  },
+  true
+);
 
-headerAbout.onclick = () => {
-  location.href = aboutId;
-};
+// Fonctions utilitaires
+function changeRootVarCss(name, value) {
+  document.documentElement.style.setProperty(name, value);
+}
 
-var btnBadger = document.querySelector("#badger");
-btnBadger.onclick = () => {
-  location.href = "/badger.html";
-};
-
-var btnM4O = document.querySelector("#m4o");
-btnM4O.onclick = () => {
-  location.href = "/m4o.html";
-};
-
-var btn0sur20 = document.querySelector("#_0sur20");
-btn0sur20.onclick = () => {
-  console.log("test");
-  location.href = "/0sur20.html";
-};
-
-var btnCti = document.querySelector("#ctiExpert");
-btnCti.onclick = () => {
-  location.href = "/cti-expert.html";
-};
-
-var btnMetrotec = document.querySelector("#metrotecAlgerie");
-btnMetrotec.onclick = () => {
-  location.href = "/metrotec-algerie.html";
-};
-
-var btnV2quiz = document.querySelector("#v2quiz");
-btnV2quiz.onclick = () => {
-  location.href = "/v2quiz.html";
-};
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}

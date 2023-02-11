@@ -147,12 +147,12 @@
   .menu-footer li {
     font-size: 18px;
   }
-  .go-top button div {
-    padding: 15px;
-    margin: 7.5px;
+  .go-top div{
+    height: 50px;
+    width: 50px;
   }
-  .go-top button {
-    padding: 0;
+  .go-top svg {
+    width: 25px;
   }
   .go-top {
     position: relative;
@@ -160,6 +160,9 @@
     justify-content: flex-end;
     -ms-transform: translateY(0);
     transform: translateY(0);
+    height: 50px;
+    width: 50px;
+    margin: 20px 0 0 auto;
   }
   .email-phone {
     margin-top: 0px;
