@@ -21,10 +21,17 @@ async function startAnimation() {
     if (i === allPath.length - 1) {
       changeRootVarCss("--svg-color-primary", "var(--primary-color)");
       aboutMeUnderline.style.opacity = 0;
-    } else if (i === allPath.length - 40) {
+    } else if (i > allPath.length / 4) {
       changeRootVarCss("--show-menu", 1);
       changeRootVarCss("--y-transform-transition", "translateY(0px)");
     }
+    await sleep(70);
+  }
+
+  const student = document.getElementsByClassName("student");
+  for (let i = 0; i < student.length; i++) {
+    const word = student[i];
+    word.classList.add("opacity-3");
     await sleep(70);
   }
 }
@@ -79,4 +86,19 @@ function changeRootVarCss(name, value) {
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+let hideProject = true;
+function showMoreProjects() {
+  hideProject = !hideProject;
+  if (hideProject) {
+    document.getElementById("show-more-projects").classList.remove("hidden");
+    document.getElementById("show-less-projects").classList.add("hidden");
+    document.getElementById("show-less-projects").scrollIntoView();
+    changeRootVarCss("--hide-projects", "none");
+  } else {
+    document.getElementById("show-more-projects").classList.add("hidden");
+    document.getElementById("show-less-projects").classList.remove("hidden");
+    changeRootVarCss("--hide-projects", "block");
+  }
 }

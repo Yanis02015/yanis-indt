@@ -147,7 +147,7 @@
   .menu-footer li {
     font-size: 18px;
   }
-  .go-top div{
+  .go-top div {
     height: 50px;
     width: 50px;
   }
@@ -169,6 +169,22 @@
   }
   .copyright p {
     font-size: 11px;
+  }
+  .image-about {
+    justify-content: flex-start;
+  }
+  .image-about > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .image-about .about-image-desc {
+    position: static;
+    padding-top: 0;
+  }
+  .card-action button,
+  .show-more {
+    font-size: 20px;
   }
 }
 
@@ -216,14 +232,25 @@
     margin-top: 0px;
     margin-bottom: 15px;
   }
-  .image-logo-footer img{
+  .image-logo-footer img {
     height: 50px;
   }
 }
 
 @media only screen and (max-width: 310px) {
-  .image-logo-footer{
+  .image-logo-footer {
     display: none;
+  }
+  .image-about > div {
+    flex-direction: column;
+  }
+  .image-about .about-image-desc {
+    padding-top: 10px;
+    width: auto;
+  }
+  .card-action button,
+  .show-more {
+    font-size: 15px;
   }
 }
 
@@ -243,6 +270,10 @@
 @media only screen and (max-width: 233px) {
   footer .email-phone h3 {
     font-size: 13px;
+  }
+  .card-action button,
+  .show-more {
+    font-size: 12px;
   }
 }
 
